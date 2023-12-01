@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main (){
+    int Variable = 24;
+    int *pointerToVariable = &Variable;
+    printf("cach 1:\n");
+    printf("gia tri cua bien: %d\n",Variable);
+    printf("dia chi cua bien: %p\n",(void*)&Variable);
+    printf("cach2:\n");
+    printf("gia tri cua bien (su dung con tro): %d\n",*pointerToVariable);
+    printf("dia chi cua bien (su dung con tro): %p\n",(void*)pointerToVariable);
+    return 0;
+}
